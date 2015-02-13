@@ -1,6 +1,6 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Here is the first version of the site as of 2015-02-13, and also my first try at setting up a Git and pushing to Bitbucket!
 
 ### What is this repository for? ###
 
@@ -9,4 +9,4 @@ This README would normally document whatever steps are necessary to get your app
 
 ### Who do I talk to? ###
 
-* Spike
+* Amber
