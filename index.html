@@ -200,7 +200,7 @@
           <li class="timeline">
             <div class="timeline-image">
 
-              <img class="img-circle img-responsive" alt="" src="/img/process/step-1.jpg" />
+              <img class="img-circle img-responsive" alt="" src="/img/process/step-1.jpg" height="66" width="66" />
             </div>
             <div class="timeline-panel">
               <div class="timeline-number">1</div>
@@ -223,7 +223,7 @@
           <li class="timeline-inverted">
             <div class="timeline-image">
 
-              <img class="img-circle img-responsive" alt="" src="/img/process/step-2.jpg" />
+              <img class="img-circle img-responsive" alt="" src="/img/process/step-2.jpg" height="66" width="66" />
             </div>
             <div class="timeline-panel">
               <div class="timeline-number">2</div>
@@ -247,7 +247,7 @@
           <li class="timeline">
             <div class="timeline-image">
 
-              <img class="img-circle img-responsive" alt="" src="/img/process/step-3.jpg" />
+              <img class="img-circle img-responsive" alt="" src="/img/process/step-3.jpg" height="66" width="66" />
             </div>
             <div class="timeline-panel">
               <div class="timeline-number">3</div>
@@ -270,7 +270,7 @@
           <li class="timeline-inverted">
             <div class="timeline-image">
 
-              <img class="img-circle img-responsive" alt="" src="/img/process/step-4.jpg" />
+              <img class="img-circle img-responsive" alt="" src="/img/process/step-4.jpg" height="66" width="66" />
             </div>
             <div class="timeline-panel">
               <div class="timeline-number">4</div>
@@ -294,7 +294,7 @@
           <li class="timeline">
             <div class="timeline-image">
 
-              <img class="img-circle img-responsive" alt="" src="/img/process/step-5.jpg" />
+              <img class="img-circle img-responsive" alt="" src="/img/process/step-5.jpg" height="66" width="66" />
             </div>
             <div class="timeline-panel">
               <div class="timeline-number">5</div>
@@ -318,7 +318,7 @@
           <li class="timeline-inverted">
             <div class="timeline-image">
 
-              <img class="img-circle img-responsive" alt="" src="/img/process/step-6.jpg" />
+              <img class="img-circle img-responsive" alt="" src="/img/process/step-6.jpg" height="66" width="66" />
             </div>
             <div class="timeline-panel">
               <div class="timeline-number">6</div>
@@ -412,14 +412,19 @@
 <!-- Plugin JSt -->
 <script src="/js/jquery.easing.min.js" xml:space="preserve"></script>
 <script src="/js/classie.js" xml:space="preserve"></script>
-<script src="/js/cbpAnimatedHeader.js" xml:space="preserve"></script>
+<script>
+  var cbpAnimatedHeader=(function(){var b=document.documentElement,g=document.querySelector(".navbar-default"),e=false,a=300;function f(){window.addEventListener("scroll",function(h){if(!e){e=true;setTimeout(d,250)}},false)}function d(){var h=c();if(h>=a){classie.add(g,"cbp-af-header-shrink")}else{classie.remove(g,"cbp-af-header-shrink")}e=false}function c(){return window.pageYOffset||b.scrollTop}f()})();
+</script>
 
 <!-- Contact Form JS -->
 <script src="/js/jqBootstrapValidation.js" xml:space="preserve"></script>
 <script src="/js/contact.js" xml:space="preserve"></script>
 
 <!-- Page Scroll Effects JS -->
-<script src="/js/pageScroll.js" xml:space="preserve"></script>
+<script>
+  $(function(){$('a.page-scroll').bind('click',function(event){var $anchor=$(this);$('html, body').stop().animate({scrollTop:$($anchor.attr('href')).offset().top},1500,'easeInOutExpo');event.preventDefault();});});$('body').scrollspy({target:'.navbar-fixed-top'})
+  $('.navbar-collapse ul li a').click(function(){$('.navbar-toggle:visible').click();});
+</script>
 
 <script>
   var cb = function() {
