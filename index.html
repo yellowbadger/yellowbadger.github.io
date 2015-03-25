@@ -3,24 +3,15 @@
 
 <!--[if lt IE 7]>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
-      xmlns:yb="http://www.yellowbadger.com"
       class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
-      xmlns:yb="http://www.yellowbadger.com"
       class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
-      xmlns:yb="http://www.yellowbadger.com"
       class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3" xmlns:yb="http://www.yellowbadger.com" xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en"> <!--<![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en"> <!--<![endif]-->
 
 <head>
 
@@ -44,7 +35,6 @@
   <!-- Custom CSS -->
   <link href="/css/styles.css" rel="stylesheet" />
 
-  <link href="/css/admin.css" rel="stylesheet" />
   <!-- Custom Fonts -->
   <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
   <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
@@ -85,8 +75,8 @@
       </button>
       <a class="navbar-brand page-scroll" href="#page-top" shape="rect">YellowBadger</a>
       <div class="contact-top">
-        <a class="contact-phone" yb:metadata="metadata.contactPhone" href="tel:+1360.305.3169" shape="rect">360.305.3169</a>
-        <a class="contact-email" yb:metatada="metadata.contactEmail" href="mailto:info@yellowbadger.com" shape="rect">info@yellowbadger.com</a>
+        <a class="contact-phone" href="tel:+1360.305.3169" shape="rect">360.305.3169</a>
+        <a class="contact-email" href="mailto:info@yellowbadger.com" shape="rect">info@yellowbadger.com</a>
       </div>
     </div>
 
@@ -116,8 +106,8 @@
     <div class="row">
       <div class="col-xs-6 col-sm-6 col-md-6 text-left">
         <div class="contact-top">
-          <a class="contact-phone" yb:metadata="metadata.contactPhone" shape="rect" href="tel:+1360.305.3169">360.305.3169</a>
-          <a class="contact-email visible-sm-block visible-md-block visible-lg-block" yb:metadata="metadata.contactEmail" shape="rect" href="mailto:info@yellowbadger.com">info@yellowbadger.com</a>
+          <a class="contact-phone" shape="rect" href="tel:+1360.305.3169">360.305.3169</a>
+          <a class="contact-email visible-sm-block visible-md-block visible-lg-block" shape="rect" href="mailto:info@yellowbadger.com">info@yellowbadger.com</a>
         </div>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 text-right">
@@ -126,22 +116,22 @@
     </div>
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-6">
-        <div class="featured visible-md-block visible-lg-block" yb:contentItem="contentItems.featured">
+        <div class="featured visible-md-block visible-lg-block">
 
-          <div yb:htmlElement="title"></div>
-          <div yb:htmlElement="content"></div>
+          <div></div>
+          <div></div>
 
         </div>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6">
-        <div class="intro-text" yb:contentItem="contentItems.intro">
+        <div class="intro-text">
           <div class="intro-lead-in">
-            <h1 yb:htmlElement="title">We Are YellowBadger</h1>
+            <h1>We Are YellowBadger</h1>
           </div>
           <div class="intro-heading-1">
-            <h2 yb:htmlElement="summary">We create beautiful, modern websites and cutting-edge apps.</h2>
+            <h2>We create beautiful, modern websites and cutting-edge apps.</h2>
           </div>
-          <div yb:htmlElement="content" class="intro-heading-2">
+          <div class="intro-heading-2">
             <p>A one-stop digital solutions agency based in Bellingham, WA.</p>
             <p>Have a project in mind? <a class="page-scroll" href="#contact">We&rsquo;d love to hear more</a>.</p></div>
         </div>
@@ -158,13 +148,13 @@
 <!-- About Section -->
 <section id="about">
   <div class="container">
-    <div class="row" yb:contentItem="contentItems.about">
+    <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-6">
-        <h4 class="grow-biz-head" yb:htmlElement="title">How can we help your business grow?</h4>
+        <h4 class="grow-biz-head">How can we help your business grow?</h4>
         <div class="grow-biz visible-sm-block visible-md-block visible-lg-block">
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-6" yb:htmlElement="content">
+      <div class="col-xs-12 col-sm-6 col-md-6">
         <p class="text-muted">YellowBadger provides <strong>software engineering</strong>, <strong>architecture</strong>, <strong>design</strong>, and <strong>training services</strong> to a wide array of organizations locally, across the United States, and internationally.</p>
         <p class="text-muted">We have worked with globally recognized names such as <strong>T-Mobile</strong>, <strong>Taser</strong>, <strong>WalMart</strong>, <strong>UnderArmour</strong>, <strong>Adobe</strong>, <strong>IBM</strong>, and <strong>Lockheed Martin</strong>. We also work with start-ups and small to medium-sized businesses across many industries including healthcare, insurance, telecoms, education, retail, and financial services.</p>
         <p class="text-muted">Whatever your industry or scale, if you need a digital solution we would love to chat with you!</p>
@@ -176,7 +166,7 @@
 </section>
 
 <!-- Process Section -->
-<section id="process" yb:contentItemList="contentItemLists.processSteps">
+<section id="process">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -187,7 +177,7 @@
       <div class="col-lg-12">
         <ul class="timeline">
 
-          <li yb:listItem="" class="timeline-inverted">
+          <li class="timeline-inverted">
             <div class="timeline-image">
               <i class="define-checkpoint fa fa-check-circle"></i>
 
@@ -196,10 +186,10 @@
 
               <div>
                 <div class="timeline-heading">
-                  <h4 yb:htmlElement="label">Checkpoints</h4>
+                  <h4>Checkpoints</h4>
                 </div>
                 <div class="timeline-body">
-                  <p yb:htmlElement="description" class="text-muted">We believe in transparency. We want you to be informed every
+                  <p class="text-muted">We believe in transparency. We want you to be informed every
                     step of the way. So during and after each phase we include you in our internal
                     checkpoint conversations so that your feedback can be used to make course
                     corrections and any changes integrated as soon as possible.</p>
@@ -209,7 +199,7 @@
             </div>
           </li>
 
-          <li yb:listItem="" class="timeline">
+          <li class="timeline">
             <div class="timeline-image">
 
               <img class="img-circle img-responsive" alt="" src="/img/process/step-1.jpg" />
@@ -218,10 +208,10 @@
               <div class="timeline-number">1</div>
               <div class="timeline-wrap">
                 <div class="timeline-heading">
-                  <h4 yb:htmlElement="label">First Contact</h4>
+                  <h4>First Contact</h4>
                 </div>
                 <div class="timeline-body">
-                  <p yb:htmlElement="description" class="text-muted">The first step is our initial consultation where we try to
+                  <p class="text-muted">The first step is our initial consultation where we try to
                     learn as much as we can about your organization and create a "Wish List" of
                     everything you would like.</p>
                 </div>
@@ -232,7 +222,7 @@
             </div>
           </li>
 
-          <li yb:listItem="" class="timeline-inverted">
+          <li class="timeline-inverted">
             <div class="timeline-image">
 
               <img class="img-circle img-responsive" alt="" src="/img/process/step-2.jpg" />
@@ -241,10 +231,10 @@
               <div class="timeline-number">2</div>
               <div class="timeline-wrap">
                 <div class="timeline-heading">
-                  <h4 yb:htmlElement="label">Proof of Concept</h4>
+                  <h4>Proof of Concept</h4>
                 </div>
                 <div class="timeline-body">
-                  <p yb:htmlElement="description" class="text-muted">During the proof of concept phase we identify the core
+                  <p class="text-muted">During the proof of concept phase we identify the core
                     functionality for the project and produce a minimally functional implementation
                     that demonstrates that the idea is viable and assumptions like level of effort
                     and complexity are valid.</p>
@@ -256,7 +246,7 @@
             </div>
           </li>
 
-          <li yb:listItem="" class="timeline">
+          <li class="timeline">
             <div class="timeline-image">
 
               <img class="img-circle img-responsive" alt="" src="/img/process/step-3.jpg" />
@@ -265,10 +255,10 @@
               <div class="timeline-number">3</div>
               <div class="timeline-wrap">
                 <div class="timeline-heading">
-                  <h4 yb:htmlElement="label">Refine Design</h4>
+                  <h4>Refine Design</h4>
                 </div>
                 <div class="timeline-body">
-                  <p yb:htmlElement="description" class="text-muted">After providing you with the proof of concept, we work through
+                  <p class="text-muted">After providing you with the proof of concept, we work through
                     all its functional aspects with you and go over the rest of the items in the
                     original wish list to refine the details for the final product.</p>
                 </div>
@@ -279,7 +269,7 @@
             </div>
           </li>
 
-          <li yb:listItem="" class="timeline-inverted">
+          <li class="timeline-inverted">
             <div class="timeline-image">
 
               <img class="img-circle img-responsive" alt="" src="/img/process/step-4.jpg" />
@@ -288,10 +278,10 @@
               <div class="timeline-number">4</div>
               <div class="timeline-wrap">
                 <div class="timeline-heading">
-                  <h4 yb:htmlElement="label">Divide &amp; Prioritize</h4>
+                  <h4>Divide &amp; Prioritize</h4>
                 </div>
                 <div class="timeline-body">
-                  <p yb:htmlElement="description" class="text-muted">Once the items in your wish list have been refined, we help
+                  <p class="text-muted">Once the items in your wish list have been refined, we help
                     you break them out into independent work items that can each provide value to
                     you on their own. We then work with you to prioritize them and make sure they
                     can be done within your budget.</p>
@@ -303,7 +293,7 @@
             </div>
           </li>
 
-          <li yb:listItem="" class="timeline">
+          <li class="timeline">
             <div class="timeline-image">
 
               <img class="img-circle img-responsive" alt="" src="/img/process/step-5.jpg" />
@@ -312,10 +302,10 @@
               <div class="timeline-number">5</div>
               <div class="timeline-wrap">
                 <div class="timeline-heading">
-                  <h4 yb:htmlElement="label">Develop &amp; Test</h4>
+                  <h4>Develop &amp; Test</h4>
                 </div>
                 <div class="timeline-body">
-                  <p yb:htmlElement="description" class="text-muted">With a prioritized list of items, we set to work on
+                  <p class="text-muted">With a prioritized list of items, we set to work on
                     developing and testing. We use a continuous delivery system which ensures that
                     every 1-2 weeks we provide you with fully functional ready to use portions of
                     your project.</p>
@@ -327,7 +317,7 @@
             </div>
           </li>
 
-          <li yb:listItem="" class="timeline-inverted">
+          <li class="timeline-inverted">
             <div class="timeline-image">
 
               <img class="img-circle img-responsive" alt="" src="/img/process/step-6.jpg" />
@@ -336,10 +326,10 @@
               <div class="timeline-number">6</div>
               <div class="timeline-wrap">
                 <div class="timeline-heading">
-                  <h4 yb:htmlElement="label">Deploy (&amp; Train)</h4>
+                  <h4>Deploy (&amp; Train)</h4>
                 </div>
                 <div class="timeline-body">
-                  <p yb:htmlElement="description" class="text-muted">The best part: taking your project live. We also provide
+                  <p class="text-muted">The best part: taking your project live. We also provide
                     ongoing support to make sure new users can be brought up to speed and make
                     sure that your project continues to meet your needs.</p>
                 </div>
@@ -432,9 +422,6 @@
 
 <!-- Page Scroll Effects JS -->
 <script src="/js/pageScroll.js" xml:space="preserve"></script>
-
-
-<script src="/js/admin.js" xml:space="preserve"></script>
 
 
 </body>
