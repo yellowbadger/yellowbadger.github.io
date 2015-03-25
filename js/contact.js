@@ -18,7 +18,7 @@ $(function() {
         firstName = name.split(' ').slice(0, -1).join(' ');
       }
       $.ajax({
-        url: "//54.214.13.125/mail/contact",
+        url: "//api.yellowbadger.com/mail/contact",
         type: "POST",
         data: JSON.stringify({
           contactName: name,
